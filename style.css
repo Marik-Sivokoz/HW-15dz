@@ -1,0 +1,51 @@
+<style>
+    .holder {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200px; /* Налаштуйте висоту контейнера за потребою */
+        background-color: lightgray; /* Колір фону контейнера */
+    }
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .item {
+        width: 18%; /* Ширина кожного елемента */
+        height: 50px; /* Висота кожного елемента */
+        background-color: lightblue; /* Колір фону елемента */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black; /* Додайте рамку для візуалізації елемента */
+    }
+    .item:nth-child(1),
+    .item:nth-child(5) {
+        width: 38%; /* Ширина для перших та останніх елементів */
+        background-color: lightgreen; /* Колір для перших та останніх елементів */
+    }
+    .item:nth-child(5) {
+        width: 38%; /* Ширина для елемента 5 */
+    }
+</style>
+
+<div class="holder">
+    <div class="top">
+        <div class="item">1</div>
+        <div class="item">5</div>
+    </div>
+    <div class="bottom">
+        <div class="item">3</div>
+        <div class="item">2</div>
+        <div class="item">4</div>
+    </div>
+</div>
